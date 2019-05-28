@@ -2,8 +2,9 @@
   "name": "gittagotchi",
   "version": "0.0.1",
   "description": "A tamagotchi responding to git commits and builds",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swen Meeuwes",
@@ -11,5 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
