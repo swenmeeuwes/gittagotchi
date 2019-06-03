@@ -7,7 +7,8 @@ const PetSchema = new Schema({
   description: { type: String, required: false },
   food: { type: Number, required: true },
   happiness: { type: Number, required: true },
-  growth: { type: Number, required: true }
+  growth: { type: Number, required: true },
+  createdAt: { type: Date, required: true },
 });
 
 PetSchema.plugin(uniqueValidator);
