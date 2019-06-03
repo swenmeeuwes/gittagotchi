@@ -22,7 +22,7 @@ databaseConnection.once('open', () => {
   app.use(bodyParser.urlencoded({ extended: false })); // 'extended' disallows the posting of nested objects. For more info on 'extended' see https://stackoverflow.com/questions/29960764/what-does-extended-mean-in-express-4-0
 
   // Configure routes
-  const routes = require('./routes');
+  const routes = require('./api/routes');
   app.use('/api', routes);
 
   // Default API response
